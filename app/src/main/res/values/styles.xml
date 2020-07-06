@@ -1,0 +1,115 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="popupMenuStyle">@style/Widget.MaterialComponents.PopupMenu</item>
+        <item name="android:contextPopupMenuStyle" tools:targetApi="n">
+            @style/Widget.MaterialComponents.PopupMenu.ContextMenu
+        </item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MaterialComponents.PopupMenu.Overflow</item>
+        <item name="fontFamily">@font/font_my_custom</item>
+    </style>
+
+    <style name="bottom_navigation_view_text_in_active">
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="bottom_navigation_view_text_in_inactive">
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:layout_width">278dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/input_field</item>
+    </style>
+
+
+    <style name="edit_word_list_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/input_field</item>
+    </style>
+
+    <style name="text_view_white_style">
+        <item name="fontFamily">@font/font_my_custom</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="submit_button_style">
+        <item name="android:layout_width">159dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/submit_button_background</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="subject_style">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="value_style">
+        <!--<item name="android:layout_marginStart">15dp</item>-->
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">60dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="word_list_subject_style">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="word_list_value_style">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:fontFamily">@font/font_my_custom</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="property"
+            type="com.example.worddefine.database.model.WordList" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layoutDirection="inherit"
+        app:cardBackgroundColor="@color/greyWhite"
+        app:contentPadding="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/word_list_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:fontFamily="@font/font_my_custom"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:wordListTitle="@{property.title}" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/word_list_item_image_background"
+                android:src="@drawable/profile_image"
+                app:imgUrl="@{property.userId}"
+                app:imgDescription="@{property.username}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--<TextView
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_my_custom"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/profile_image"
+                app:layout_constraintStart_toStartOf="@+id/profile_image"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image"
+                app:layout_constraintVertical_bias="0.4"
+                app:wordListOwner="@{property.username}" />-->
+
+            <!--            <ImageView
+                android:id="@+id/favorite_image_view"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="8dp"
+                app:favorite="@{property.favoriteWordList}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/three_point_image_view"
+                app:layout_constraintTop_toTopOf="@+id/guideline"
+                app:layout_constraintVertical_bias="0.4"
+                app:srcCompat="@drawable/ic_favorite_uncheck_black_24dp"
+                tools:ignore="VectorDrawableCompat" />-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                app:cardBackgroundColor="@color/greyWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_begin="30dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_my_custom"
+
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        app:wordListDate="@{property.dateCreate}"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:id="@+id/three_point_image_view"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline"
+
+                        app:srcCompat="@drawable/ic_more_horiz_black_24dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageView
+                        android:id="@+id/visible_image_view"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:visibility="visible"
+                        app:imageVisible="@{property.visible}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/three_point_image_view"
+                        app:layout_constraintTop_toTopOf="@+id/guideline"
+                        app:srcCompat="@drawable/ic_open_in_browser_green_24dp"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/favorite_check_box"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:button="@drawable/sl_favourite_24dp"
+                        app:buttonTint="@android:color/holo_red_dark"
+                        app:favorite="@{property.favoriteWordList}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/visible_image_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/guideline"
+                        app:useMaterialThemeColors="true" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

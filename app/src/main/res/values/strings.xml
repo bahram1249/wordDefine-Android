@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">WordDefine</string>
+    <string name="action_settings" translatable="false">Action Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="successful_sign_up">Sign Up Successful</string>
+    <string name="failed_to_connect_to_server">Failed to connect to server</string>
+    <string name="required">Required</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="greater_than_five_and_less_than_two_hundred_fifty_six">length must be greater than 5 and less than 256</string>
+    <string name="greater_than_two_and_less_than_two_hundred_fifty_six">length must be greater than 2 and less than 256</string>
+    <string name="auth_pref" translatable="false">authPref</string>
+    <string name="token" translatable="false">token</string>
+    <string name="login_seccuesful">Login Seccuesful</string>
+    <string name="welcome">Welcome !</string>
+    <string name="learn_vocabulary_with_word_define">Learn vocabulary With wordDefine</string>
+    <string name="you_are_not_a_member">You are not a member?</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="favorites">favorites</string>
+    <string name="profile">Profile</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="create_by">Create By : </string>
+    <string name="edit">Edit</string>
+    <string name="are_you_sure_to_delete_this_word_list">Are you sure you want delete this word list ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_found_anything">Not Found Anything</string>
+    <string name="please_enter_password_of_this_word_list">Please Enter Password Of this word list</string>
+    <string name="confirm">Confirm</string>
+    <string name="the_password_you_set_is_wrong">The Password you set is wrong!</string>
+    <string name="word_name">Word Name : </string>
+    <string name="definition">Definition : </string>
+    <string name="definition_text">Definition</string>
+    <string name="examples">Examples : </string>
+    <string name="examples_text">Examples</string>
+    <string name="language">Language : </string>
+    <string name="date_create">Date Create : </string>
+    <string name="title">Title</string>
+    <string name="visible">Visible : </string>
+    <string name="add_word_by">Add Word By : </string>
+    <string name="add">Add</string>
+    <string name="greater_than_three_and_less_than_two_hundred_and_fifty_five">length must be greater than 3 and less than 255 character</string>
+    <string name="greater_than_two_and_less_than_one_thousand_and_twenty_four">length must be greater than 2 and less than 1024</string>
+    <string name="greater_than_two_and_less_than_two_thousand_and_forty_eight">length must be greater than 2 and less than 2048</string>
+    <string name="are_you_sure_want_to_delete_this_word">Are you sure want to delete this word?</string>
+    <string name="loading">Loading ...</string>
+    <string-array name="visible_filter_array">
+        <item>Everyone</item>
+        <item>Me</item>
+    </string-array>
+
+    <string-array name="word_list_visible_filter_array">
+        <item>Everyone</item>
+        <item>User With Password</item>
+        <item>Only Me</item>
+    </string-array>
+
+    <string-array name="word_languages_array">
+        <item>af</item>
+        <item>ar</item>
+        <item>az</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>cy</item>
+        <item>da</item>
+        <item>de</item>
+        <item>dv</item>
+        <item>el</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>es</item>
+        <item>et</item>
+        <item>eu</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fo</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>hy</item>
+        <item>id</item>
+        <item>is</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ka</item>
+        <item>kk</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>kok</item>
+        <item>ky</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>mi</item>
+        <item>mk</item>
+        <item>mn</item>
+        <item>mr</item>
+        <item>ms</item>
+        <item>mt</item>
+        <item>nb</item>
+        <item>nl</item>
+        <item>ns</item>
+        <item>pa</item>
+        <item>pl</item>
+        <item>ps</item>
+        <item>pt</item>
+        <item>qu</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>se</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sq</item>
+        <item>sv</item>
+        <item>sw</item>
+        <item>syr</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tl</item>
+        <item>tn</item>
+        <item>tr</item>
+        <item>tt</item>
+        <item>ts</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>vi</item>
+        <item>xh</item>
+        <item>zh</item>
+        <item>zu</item>
+    </string-array>
+</resources>

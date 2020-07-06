@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WordDefine</string>
+    <string name="email">ایمیل</string>
+    <string name="failed_to_connect_to_server">خطا در برقراری ارتباط با سرور</string>
+    <string name="greater_than_five_and_less_than_two_hundred_fifty_six">طول باید بزرگتر از 5 و کوچکتر از 256 کاراکتر باشد</string>
+    <string name="greater_than_two_and_less_than_two_hundred_fifty_six">طول باید بزرگتر از 2 و کوچکتر از 256 کاراکتر باشد</string>
+    <string name="invalid_email_address">آدرس ایمیل نامعتبر</string>
+    <string name="login">ورود</string>
+    <string name="login_seccuesful">ورود با موفقیت انجام شد</string>
+    <string name="name">نام</string>
+    <string name="password">پسورد</string>
+    <string name="required">ضروری</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="successful_sign_up">ثبت نام با موفقیت انجام شد</string>
+    <string name="register">ثبت نام</string>
+    <string name="learn_vocabulary_with_word_define">با ورد دیفاین لغت یاد بگیر</string>
+    <string name="you_are_not_a_member">شما عضو سیستم نیستید؟</string>
+    <string name="welcome">خوش آمدید !</string>
+    <string name="home">خانه</string>
+    <string name="profile">پروفایل</string>
+    <string name="favorites">علاقه مندی</string>
+    <string name="share">اشتراک</string>
+    <string name="delete">حذف</string>
+    <string name="create_by">ایجاد شده توسط : </string>
+    <string name="edit">ویرایش</string>
+    <string name="are_you_sure_to_delete_this_word_list">آیا مطمعن هستید میخواهید این ورد لیست را حذف کنید ؟</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="not_found_anything">چیزی یافت نشد</string>
+    <string name="please_enter_password_of_this_word_list">لطفا رمز عبور این ورد لیست را وارد کنید</string>
+    <string name="confirm">تایید</string>
+    <string name="the_password_you_set_is_wrong">رمز انتخابی اشتباه هست</string>
+    <string name="word_name">نام کلمه : </string>
+    <string name="definition">معنی : </string>
+    <string name="definition_text">معنی</string>
+    <string name="examples">مثال ها : </string>
+    <string name="examples_text">مثال ها</string>
+    <string name="language">زبان : </string>
+    <string name="date_create">زمان ایجاد : </string>
+    <string name="title">عنوان</string>
+    <string name="visible">قابل نمایش : </string>
+    <string name="add_word_by">اضافه کردن کلمات توسط : </string>
+    <string name="add">اضافه کردن</string>
+    <string name="greater_than_three_and_less_than_two_hundred_and_fifty_five">طول کاراکتر میبایست بزرگتر از 3 و کوچکتر از 255 کاراکتر باشد</string>
+    <string name="greater_than_two_and_less_than_one_thousand_and_twenty_four">طول کاراکتر میبایست بزرگتر از 2 و کوچکتر از 1024 کاراکتر باشد</string>
+    <string name="greater_than_two_and_less_than_two_thousand_and_forty_eight">طول کاراکتر میبایست بزرگتر از 2 و کوچکتر از 1024 کاراکتر باشد</string>
+    <string name="are_you_sure_want_to_delete_this_word">آیا اطمینان از حذف این کلمه دارین؟</string>
+    <string name="loading">در حال بارگذاری</string>
+    <string-array name="visible_filter_array">
+        <item>همه</item>
+        <item>من</item>
+    </string-array>
+
+    <string-array name="word_list_visible_filter_array">
+        <item>برای همه</item>
+        <item>افراد با رمز عبور</item>
+        <item>فقط من</item>
+    </string-array>
+
+    <string-array name="word_languages_array">
+        <item>af</item>
+        <item>ar</item>
+        <item>az</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>ca</item>
+        <item>cs</item>
+        <item>cy</item>
+        <item>da</item>
+        <item>de</item>
+        <item>dv</item>
+        <item>el</item>
+        <item>en</item>
+        <item>eo</item>
+        <item>es</item>
+        <item>et</item>
+        <item>eu</item>
+        <item>fa</item>
+        <item>fi</item>
+        <item>fo</item>
+        <item>fr</item>
+        <item>gl</item>
+        <item>gu</item>
+        <item>he</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>hy</item>
+        <item>id</item>
+        <item>is</item>
+        <item>it</item>
+        <item>ja</item>
+        <item>ka</item>
+        <item>kk</item>
+        <item>kn</item>
+        <item>ko</item>
+        <item>kok</item>
+        <item>ky</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>mi</item>
+        <item>mk</item>
+        <item>mn</item>
+        <item>mr</item>
+        <item>ms</item>
+        <item>mt</item>
+        <item>nb</item>
+        <item>nl</item>
+        <item>ns</item>
+        <item>pa</item>
+        <item>pl</item>
+        <item>ps</item>
+        <item>pt</item>
+        <item>qu</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>se</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sq</item>
+        <item>sv</item>
+        <item>sw</item>
+        <item>syr</item>
+        <item>ta</item>
+        <item>te</item>
+        <item>th</item>
+        <item>tl</item>
+        <item>tn</item>
+        <item>tr</item>
+        <item>tt</item>
+        <item>ts</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>uz</item>
+        <item>vi</item>
+        <item>xh</item>
+        <item>zh</item>
+        <item>zu</item>
+    </string-array>
+
+</resources>

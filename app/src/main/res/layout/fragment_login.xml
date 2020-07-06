@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.login.LoginFragment">
+
+    <data>
+        <variable
+            name="loginViewModel"
+            type="com.example.worddefine.screens.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/login_sign_up_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/email_editText"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/password_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969"
+            style="@style/edit_text_style"/>
+
+        <EditText
+            android:id="@+id/password_editText"
+            style="@style/edit_text_style"
+            android:drawableStart="@drawable/ic_security_black_24dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/email_editText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_editText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button"
+            android:layout_marginTop="16dp"
+            android:text="@string/login"
+            style="@style/submit_button_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_editText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

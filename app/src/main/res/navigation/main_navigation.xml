@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.worddefine.screens.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wordListPasswordFragment"
+            app:destination="@id/wordListPasswordFragment"
+            app:exitAnim="@anim/fade_out_animation" />
+        <action
+            android:id="@+id/action_homeFragment_to_wordListEditFragment"
+            app:destination="@id/wordListEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.worddefine.screens.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_wordListPasswordFragment"
+            app:destination="@id/wordListPasswordFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_wordListEditFragment"
+            app:destination="@id/wordListEditFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.worddefine.screens.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.example.worddefine.screens.words.WordsFragment"
+        android:label="{wordListTitle}"
+        tools:layout="@layout/fragment_words" >
+
+
+
+        <argument
+            android:name="wordAccessToken"
+            app:argType="string" />
+
+        <argument
+            android:name="wordListId"
+            app:argType="string" />
+
+        <argument android:name="wordListTitle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_wordsFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+        <action
+            android:id="@+id/action_wordsFragment_to_wordEditFragment"
+            app:destination="@id/wordEditFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/wordListPasswordFragment"
+        android:name="com.example.worddefine.screens.wordListPassword.WordListPasswordFragment"
+        android:label="{wordListTitle}"
+        tools:layout="@layout/fragment_word_list_password" >
+        <argument
+            android:name="wordListId"
+            app:argType="string" />
+        <argument
+            android:name="wordListTitle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_wordListPasswordFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.example.worddefine.screens.word.WordFragment"
+        android:label="{wordName}"
+        tools:layout="@layout/fragment_word" >
+        <argument
+            android:name="wordId"
+            app:argType="string" />
+        <argument
+            android:name="wordName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordListEditFragment"
+        android:name="com.example.worddefine.screens.wordListEdit.WordListEditFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_word_list_edit" >
+        <argument
+            android:name="wordListId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordEditFragment"
+        android:name="com.example.worddefine.screens.wordEdit.WordEditFragment"
+        android:label="fragment_word_edit"
+        tools:layout="@layout/fragment_word_edit" >
+        <argument
+            android:name="wordListId"
+            app:argType="string" />
+        <argument
+            android:name="wordId"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="passwordVisible"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+</navigation>
